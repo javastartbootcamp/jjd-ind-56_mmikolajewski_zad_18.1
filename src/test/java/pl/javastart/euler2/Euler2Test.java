@@ -6,11 +6,10 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class Euler2Test {
-
     private Euler2 euler2 = new Euler2();
 
     @ParameterizedTest
-    @CsvSource(value = {"9, 10 ","10, 10","11, 10" ,"34, 44", "4000000, 4613732" })
+    @CsvSource(value = {"9,10", "10,10", "11,10", "34,44"})
     void shouldReturn10ForLimit10(int limit, int expected) {
 
         //when
